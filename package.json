@@ -1,7 +1,7 @@
 {
   "name": "fastkart",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERN Stack E-commerce App",
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
