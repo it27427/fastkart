@@ -1,4 +1,4 @@
-# Dokan-Bondhu MERN E-commerce App
+# FastKart E-commerce App
 
 App to create, read, update, delete with search and filter ecommerce products.
 This project build by MongoDB, Express, React(v18), TailwindCSS and Ant Design.
