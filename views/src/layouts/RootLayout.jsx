@@ -1,8 +1,15 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 const RootLayout = ({ children }) => {
   return (
-    <main>
-      <div className='container'>{children}</div>
-    </main>
+    <>
+      <Header />
+      <main>
+        <div className='container'>{children}</div>
+      </main>
+      <Footer />
+    </>
   );
 };
 
