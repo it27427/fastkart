@@ -4,7 +4,6 @@ const App = () => {
   return (
     <div>
       <h1>App JS</h1>
-      <ChangeTheme />
     </div>
   );
 };
