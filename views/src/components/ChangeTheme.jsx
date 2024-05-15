@@ -2,16 +2,11 @@ const ChangeTheme = () => {
   return (
     <>
       <label className='swap swap-rotate'>
-        <input
-          type='checkbox'
-          value='sunset'
-          className='theme-controller'
-          hidden
-        />
+        <input type='checkbox' value='night' className='theme-controller' />
 
         {/* sun icon */}
         <svg
-          className='swap-on fill-current w-10 h-10'
+          className='swap-on fill-current w-7 h-7'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'
         >
@@ -20,7 +15,7 @@ const ChangeTheme = () => {
 
         {/* moon icon */}
         <svg
-          className='swap-off fill-current w-10 h-10'
+          className='swap-off fill-current w-7 h-7'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'
         >

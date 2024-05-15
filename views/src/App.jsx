@@ -1,9 +1,9 @@
-import ChangeTheme from './components/ChangeTheme';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <div>
-      <h1>App JS</h1>
+      <Header />
     </div>
   );
 };
