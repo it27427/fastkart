@@ -1,7 +1,9 @@
+import BrandLogo from './BrandLogo';
+
 const NavBar = () => {
   return (
-    <nav>
-      <h2>Navbar</h2>
+    <nav className='flex items-center justify-between'>
+      <BrandLogo />
     </nav>
   );
 };
