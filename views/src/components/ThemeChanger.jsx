@@ -1,8 +1,34 @@
+import { useEffect, useState } from 'react';
+
 const ChangeTheme = () => {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    const localTheme = localStorage.getItem('theme');
+    document.querySelector('html')?.setAttribute('data-theme', localTheme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.querySelector('html').classList.add('dark');
+    } else {
+      document.querySelector('html').classList.remove('dark');
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = (e) => {
+    if (e.target.checked) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+
   return (
-    <button className='btn btn-ghost btn-circle'>
+    <button onClick={handleThemeSwitch} className='btn btn-ghost btn-circle'>
       <label className='swap swap-rotate'>
-        <input type='checkbox' value='night' className='theme-controller' />
+        <input type='checkbox' />
 
         {/* sun icon */}
         <svg
