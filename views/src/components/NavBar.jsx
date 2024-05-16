@@ -9,15 +9,15 @@ const NavBar = () => {
     <nav className='flex items-center justify-between'>
       <div className='navbar bg-base-100'>
         <div className='flex-1'>
-          <Link className='btn btn-ghost'>
+          <Link to='/'>
             <BrandLogo />
           </Link>
         </div>
         <div className='flex-none'>
           <CartDropdown />
+          <ChangeTheme />
           <ProfileDropdown />
         </div>
-        <ChangeTheme />
       </div>
     </nav>
   );
