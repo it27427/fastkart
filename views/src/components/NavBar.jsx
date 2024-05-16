@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
 import ChangeTheme from './ChangeTheme';
-import MainList from './MainList';
+import ProfileDropdown from './ProfileDropdown';
 
 const NavBar = () => {
   return (
@@ -52,21 +52,7 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-          <div className='dropdown dropdown-end'>
-            <div
-              tabIndex={0}
-              role='button'
-              className='btn btn-ghost btn-circle avatar'
-            >
-              <div className='w-10 rounded-full'>
-                <img
-                  alt='User-Avatar'
-                  src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
-                />
-              </div>
-            </div>
-            <MainList />
-          </div>
+          <ProfileDropdown />
         </div>
         <ChangeTheme />
       </div>
