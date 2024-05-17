@@ -2,7 +2,7 @@ import { useState } from 'react';
 import avatar from '../assets/images/avatar/avatar.jpg';
 
 const ProfileDropdown = () => {
-  const [showAvatar, setShowAvatar] = useState(false);
+  const [showAvatar, setShowAvatar] = useState(true);
 
   return (
     <>
