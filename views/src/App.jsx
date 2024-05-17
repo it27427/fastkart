@@ -6,11 +6,14 @@ import RegisterPage from '@/pages/auth/RegisterPage';
 
 // IMPORT-PAGES
 import HomePage from '@/pages/HomePage';
+import ShopPage from '@/pages/ShopPage';
+
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
-import ShopPage from '@/pages/ShopPage';
-import ErrorPage from '@/pages/ErrorPage';
 import TermsPage from '@/pages/TermsPage';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
+
+import ErrorPage from '@/pages/ErrorPage';
 
 const App = () => {
   return (
@@ -23,7 +26,7 @@ const App = () => {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/terms-of-use' element={<TermsPage />} />
-        <Route path='/privacy-policy' element={<TermsPage />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
         {/* AUTH-PAGES */}
         <Route path='/login' element={<LoginPage />} />

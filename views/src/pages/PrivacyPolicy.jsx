@@ -1,11 +1,11 @@
 import RootLayout from '@/layouts/RootLayout';
 
-const TermsPage = () => {
+const PrivacyPolicy = () => {
   return (
     <RootLayout>
-      <h2>Terms of use</h2>
+      <h2>Privacy Policy Page</h2>
     </RootLayout>
   );
 };
 
-export default TermsPage;
+export default PrivacyPolicy;

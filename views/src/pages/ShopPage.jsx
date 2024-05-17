@@ -1,10 +1,10 @@
-import React from 'react';
+import RootLayout from '@/layouts/RootLayout';
 
 const ShopPage = () => {
   return (
-    <div>
+    <RootLayout>
       <h1>Shop Page</h1>
-    </div>
+    </RootLayout>
   );
 };
 
