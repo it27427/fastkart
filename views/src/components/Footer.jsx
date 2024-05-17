@@ -1,12 +1,13 @@
-import AnchorLink from './AnchorLink';
-import BrandLogo from './BrandLogo';
-import Copyright from './Copyright';
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
 } from 'react-icons/fa';
+import { Tooltip } from 'react-tooltip';
+import AnchorLink from './AnchorLink';
+import BrandLogo from './BrandLogo';
+import Copyright from './Copyright';
 
 const Footer = () => {
   return (
@@ -38,31 +39,40 @@ const Footer = () => {
               <div className='grid grid-flow-col gap-1'>
                 <AnchorLink
                   href='https://facebook.com/'
-                  className='btn btn-circle tooltip tooltip-top'
-                  data-tip='Follow us on Facebook'
+                  className='btn btn-circle'
+                  dataTooltipId='fbTooltip'
+                  dataTooltipContent='Follow us on facebook'
                 >
                   <FaFacebookF className='text-xl text-blue-600' />
+                  <Tooltip id='fbTooltip' />
                 </AnchorLink>
+
                 <AnchorLink
                   href='https://x.com/'
-                  className='btn btn-circle tooltip tooltip-top'
-                  data-tip='Follow us on Twitter'
+                  className='btn btn-circle'
+                  dataTooltipId='twitTooltip'
+                  dataTooltipContent='Follow us on twitter'
                 >
                   <FaTwitter className='text-xl text-blue-400' />
+                  <Tooltip id='twitTooltip' />
                 </AnchorLink>
                 <AnchorLink
                   href='https://instagram.com/'
-                  className='btn btn-circle tooltip tooltip-top'
-                  data-tip='Follow us on Instagram'
+                  className='btn btn-circle'
+                  dataTooltipId='instaTooltip'
+                  dataTooltipContent='Follow us on instagram'
                 >
                   <FaInstagram className='text-xl text-fuchsia-700' />
+                  <Tooltip id='instaTooltip' />
                 </AnchorLink>
                 <AnchorLink
                   href='https://linkedin.com/'
-                  className='btn btn-circle tooltip tooltip-top'
-                  data-tip='Follow us on Linkedin'
+                  className='btn btn-circle'
+                  dataTooltipId='linkedinTooltip'
+                  dataTooltipContent='Follow us on twitter'
                 >
                   <FaLinkedinIn className='text-xl text-sky-600' />
+                  <Tooltip id='linkedinTooltip' />
                 </AnchorLink>
               </div>
             </nav>
