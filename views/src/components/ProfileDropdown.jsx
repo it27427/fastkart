@@ -2,7 +2,7 @@ import { useState } from 'react';
 import avatar from '../assets/images/avatar/avatar.jpg';
 
 const ProfileDropdown = () => {
-  const [showAvatar, setShowAvatar] = useState(true);
+  const [showAvatar, setShowAvatar] = useState(false);
 
   return (
     <>
@@ -17,7 +17,11 @@ const ProfileDropdown = () => {
               />
             </figure>
           ) : (
-            <h2>Test</h2>
+            <div className='avatar placeholder'>
+              <div className='bg-neutral text-neutral-content rounded-full btn-circle'>
+                <span className='uppercase font-semibold'>it</span>
+              </div>
+            </div>
           )}
         </div>
 

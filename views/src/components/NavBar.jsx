@@ -20,7 +20,7 @@ const NavBar = () => {
             <BrandLogo />
           </Link>
         </div>
-        <div className='flex-none'>
+        <div className='flex-none gap-1'>
           <ThemeChanger />
 
           {/* IF-USER-LOGGEDIN */}
