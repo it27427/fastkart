@@ -7,7 +7,7 @@ import ProfileDropdown from './ProfileDropdown';
 import AuthList from './AuthList';
 
 const NavBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <nav className='flex items-center justify-between'>
