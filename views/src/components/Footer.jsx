@@ -8,6 +8,7 @@ import { Tooltip } from 'react-tooltip';
 import AnchorLink from './AnchorLink';
 import BrandLogo from './BrandLogo';
 import Copyright from './Copyright';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -21,10 +22,15 @@ const Footer = () => {
 
             <nav>
               <h6 className='footer-title'>Company</h6>
-              <a className='link link-hover'>About us</a>
-              <a className='link link-hover'>Contact</a>
-              <a className='link link-hover'>Jobs</a>
-              <a className='link link-hover'>Press kit</a>
+              <Link to='/about' className='link link-hover'>
+                About us
+              </Link>
+              <Link to='/contact' className='link link-hover'>
+                Contact
+              </Link>
+              <Link to='/shop' className='link link-hover'>
+                Shop
+              </Link>
             </nav>
 
             <nav>
