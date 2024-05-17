@@ -48,7 +48,7 @@ const Footer = () => {
               <div className='grid grid-flow-col gap-1'>
                 <AnchorLink
                   href='https://facebook.com/'
-                  className='btn btn-circle'
+                  className='btn btn-circle bg-slate-200 dark:bg-base-200'
                   dataTooltipId='fbTooltip'
                   dataTooltipContent='Follow us on facebook'
                 >
@@ -58,7 +58,7 @@ const Footer = () => {
 
                 <AnchorLink
                   href='https://x.com/'
-                  className='btn btn-circle'
+                  className='btn btn-circle bg-slate-200 dark:bg-base-200'
                   dataTooltipId='twitTooltip'
                   dataTooltipContent='Follow us on twitter'
                 >
@@ -67,7 +67,7 @@ const Footer = () => {
                 </AnchorLink>
                 <AnchorLink
                   href='https://instagram.com/'
-                  className='btn btn-circle'
+                  className='btn btn-circle bg-slate-200 dark:bg-base-200'
                   dataTooltipId='instaTooltip'
                   dataTooltipContent='Follow us on instagram'
                 >
@@ -76,7 +76,7 @@ const Footer = () => {
                 </AnchorLink>
                 <AnchorLink
                   href='https://linkedin.com/'
-                  className='btn btn-circle'
+                  className='btn btn-circle bg-slate-200 dark:bg-base-200'
                   dataTooltipId='linkedinTooltip'
                   dataTooltipContent='Follow us on twitter'
                 >
