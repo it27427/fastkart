@@ -10,15 +10,20 @@ import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import ShopPage from '@/pages/ShopPage';
 import ErrorPage from '@/pages/ErrorPage';
+import TermsPage from '@/pages/TermsPage';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/shop' element={<ShopPage />} />
+
+        {/* ABOUT-PAGES */}
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
-        <Route path='/shop' element={<ShopPage />} />
+        <Route path='/terms-of-use' element={<TermsPage />} />
+        <Route path='/privacy-policy' element={<TermsPage />} />
 
         {/* AUTH-PAGES */}
         <Route path='/login' element={<LoginPage />} />
