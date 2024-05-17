@@ -78,7 +78,7 @@ const Footer = () => {
                   href='https://linkedin.com/'
                   className='btn btn-circle bg-slate-200 dark:bg-base-200'
                   dataTooltipId='linkedinTooltip'
-                  dataTooltipContent='Follow us on twitter'
+                  dataTooltipContent='Follow us on linkedin'
                 >
                   <FaLinkedinIn className='text-xl text-sky-600' />
                   <Tooltip id='linkedinTooltip' />
